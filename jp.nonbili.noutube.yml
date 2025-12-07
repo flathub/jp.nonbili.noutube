@@ -38,8 +38,8 @@ modules:
       - install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.nonbili.noutube.png
     sources:
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.1.9/source.tar.gz
-        sha256: d1e33e9c5d1febd4c41abccb66d093deb206fe4d8f1c632a86d856116b034b7b
+        url: https://api.github.com/repos/nonbili/NouTube-Desktop/tarball/v0.1.10
+        sha256: a6f5eed2cb6b4ad56fe25815f3395451d1f4d25549ff80bb42ded0b6dbbb8a78
         strip-components: 0
         x-checker-data:
           type: json
