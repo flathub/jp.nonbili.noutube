@@ -11,7 +11,8 @@ separate-locales: false
 finish-args:
   - --device=dri
   - --share=ipc
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
   - --share=network
   - --own-name=org.mpris.MediaPlayer2.chromium.*
@@ -38,13 +39,13 @@ modules:
       - install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.nonbili.noutube.png
     sources:
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.1.14/source.tar.gz
-        sha256: fedfdcd667b866459164642b9437547acbc389672890581e9df5a8a20b6064d0
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.1.15/source.tar.gz
+        sha256: 80bfef83c0f335b8b9873b0d3fcb83b332398c270d53f9dd43a706230e175556
         strip-components: 0
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.1.14/node_modules-x64.tar.gz
-        sha256: 9afc5bb74df9c8767536cb7f181b99c1ef9586e1f5a9da474bf0282d7a84e306
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.1.15/node_modules-x64.tar.gz
+        sha256: 985aa54ca7c467a031d01ceba4f43f3f6ac6dd08c8e8f329775818d6ea0de5b5
         dest: node_modules
         only-arches: [x86_64]
 
@@ -55,15 +56,15 @@ modules:
         only-arches: [x86_64]
 
       - type: archive
-        url: https://github.com/electron/electron/releases/download/v37.2.5/electron-v37.2.5-linux-x64.zip
-        sha256: 8fbb9e05130bde60db97a05c07969039a83e7adb9885251f90727ad1e0684be7
+        url: https://github.com/electron/electron/releases/download/v39.2.7/electron-v39.2.7-linux-x64.zip
+        sha256: 2f5285ef563dca154aa247696dddef545d3d895dd9b227ed423ea0d43737c22c
         strip-components: 0
         dest: node_modules/electron/dist2
         only-arches: [x86_64]
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.1.14/node_modules-arm64.tar.gz
-        sha256: 6810bf55f20d9ff138259d6197411df8e5fc11332a1eecdccabf3ecd3e18451e
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.1.15/node_modules-arm64.tar.gz
+        sha256: e2b7b236d9b320dc4396a302d754f0fdbd7e50c573793d6215a5b728606fef08
         dest: node_modules
         only-arches: [aarch64]
 
@@ -74,8 +75,8 @@ modules:
         only-arches: [aarch64]
 
       - type: archive
-        url: https://github.com/electron/electron/releases/download/v37.2.5/electron-v37.2.5-linux-arm64.zip
-        sha256: d0651db80a6f7eb047b4eaed3d9b836a48f059c144fc3d86f33a5031033fe6bb
+        url: https://github.com/electron/electron/releases/download/v39.2.7/electron-v39.2.7-linux-arm64.zip
+        sha256: 445465a43bd2ffaec09877f4ed46385065632a4683c2806cc6211cc73c110024
         strip-components: 0
         dest: node_modules/electron/dist2
         only-arches: [aarch64]
