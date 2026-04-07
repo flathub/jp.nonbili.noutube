@@ -1,9 +1,9 @@
 app-id: jp.nonbili.noutube
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '25.08'
+base-version: "25.08"
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node22
 command: run.sh
@@ -22,8 +22,6 @@ modules:
     build-options:
       append-path: /usr/lib/sdk/node22/bin:/run/build/noutube/bin
       env:
-        VITE_SUPABASE_URL: https://pgukcvgypvjwtibzlvhr.supabase.co
-        VITE_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBndWtjdmd5cHZqd3RpYnpsdmhyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTI0NTIzODQsImV4cCI6MjAyODAyODM4NH0.zoxse4Kay_svHlQOiAINZm1lPIFPJMZAY8RKZUDSQrs
         VITE_BUILD_TARGET: portable
     build-commands:
       - bun run bundle
@@ -39,13 +37,13 @@ modules:
       - install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.nonbili.noutube.png
     sources:
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.6/source.tar.gz
-        sha256: f8143d700927994ae113bbbccf1f47d21f0b5375b2bc05d900288d3398670241
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.7/source.tar.gz
+        sha256: ff0f62b9b542d77f811e476c714580479669e4634cc9574123395ee3a690369f
         strip-components: 0
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.6/node_modules-x64.tar.gz
-        sha256: 26ffe918766215095e2ef1f70985e8766f7b6447ea9aebf4e83590d5a67fcf27
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.7/node_modules-x64.tar.gz
+        sha256: 0be25d49634d561553d24664476758eacf8cca4f8e956ac1663c81a1d780c8d3
         dest: node_modules
         only-arches: [x86_64]
 
@@ -63,8 +61,8 @@ modules:
         only-arches: [x86_64]
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.6/node_modules-arm64.tar.gz
-        sha256: c989db46f0f385776c2195eae941cd49eb4971bd226ef412eb5922747f2b0320
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.7/node_modules-arm64.tar.gz
+        sha256: 15f3098159938aed0f46d88ad12d1ce4c1ec9ed296d8ded12ad16212ac1c9d30
         dest: node_modules
         only-arches: [aarch64]
 
