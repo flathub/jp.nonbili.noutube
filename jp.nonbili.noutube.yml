@@ -37,13 +37,13 @@ modules:
       - install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.nonbili.noutube.png
     sources:
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.10/source.tar.gz
-        sha256: 8c63982362373477873f7fc8c4bb00ba73108571f268c6787c97097bc7779e06
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.11/source.tar.gz
+        sha256: c691d13dead57b255e3d9b247504d1c3fb4bccc8df8ed499758dc253e6e0b12c
         strip-components: 0
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.10/node_modules-x64.tar.gz
-        sha256: 4d70ade2a00d01f2a99f210938b56e376ac8e4d3381e73219a56fe52c94f8547
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.11/node_modules-x64.tar.gz
+        sha256: a75daf7bc5be0ef9970710dd27b8dbf179bfc65d270fb11ada5d30d545a6c8ac
         dest: node_modules
         only-arches: [x86_64]
 
@@ -61,8 +61,8 @@ modules:
         only-arches: [x86_64]
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.10/node_modules-arm64.tar.gz
-        sha256: f074aa43be8e52f1d42ac38a7079ad73d91c911935da5c4aa4749487f820ae47
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.11/node_modules-arm64.tar.gz
+        sha256: 47e5e64654cf2615c8ce4a03902dd9932bf905b5ba7deb923e7d0ab6e5aff971
         dest: node_modules
         only-arches: [aarch64]
 
