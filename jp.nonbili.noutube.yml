@@ -37,13 +37,13 @@ modules:
       - install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.nonbili.noutube.png
     sources:
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.15/source.tar.gz
-        sha256: 8b626d8b537d03e61daf44a340a3298d4c7fe45b4f1e1a1826a062063fc05bae
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.0/source.tar.gz
+        sha256: 2552897cc1512f509c559047dc85f7cb3962f8e33496c4a7057e549c08efc6be
         strip-components: 0
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.15/node_modules-x64.tar.gz
-        sha256: 1a07f0d467e279d077cf6252e5fd1c27e90d8e633a538789dadb636d968542c8
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.0/node_modules-x64.tar.gz
+        sha256: b56be6804c0b8774051fc60839af4b7156e3cdea014e59c76ddc11082e1aa32a
         dest: node_modules
         only-arches: [x86_64]
 
@@ -54,15 +54,15 @@ modules:
         only-arches: [x86_64]
 
       - type: archive
-        url: https://github.com/electron/electron/releases/download/v39.2.7/electron-v39.2.7-linux-x64.zip
-        sha256: 2f5285ef563dca154aa247696dddef545d3d895dd9b227ed423ea0d43737c22c
+        url: https://github.com/electron/electron/releases/download/v43.4.1/electron-v43.4.1-linux-x64.zip
+        sha256: 79d4efd69f0ccf1fc11891ea5075329c7b3faddad79a08d9fb395bbd63169acf
         strip-components: 0
         dest: node_modules/electron/dist2
         only-arches: [x86_64]
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.2.15/node_modules-arm64.tar.gz
-        sha256: 16e627470593036b9a3c3b4c21317c0d5f223c54af368ebf8be1c07b0d8d98fa
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.0/node_modules-arm64.tar.gz
+        sha256: 501c7d36eda700a2c98157935ed523f612184713a92ef6518713d4b8343e2faf
         dest: node_modules
         only-arches: [aarch64]
 
@@ -73,8 +73,8 @@ modules:
         only-arches: [aarch64]
 
       - type: archive
-        url: https://github.com/electron/electron/releases/download/v39.2.7/electron-v39.2.7-linux-arm64.zip
-        sha256: 445465a43bd2ffaec09877f4ed46385065632a4683c2806cc6211cc73c110024
+        url: https://github.com/electron/electron/releases/download/v43.4.1/electron-v43.4.1-linux-arm64.zip
+        sha256: 9e2b5cfbd387e138f06c7bb19b399bb3ee487dbb4110215df097d94e80431892
         strip-components: 0
         dest: node_modules/electron/dist2
         only-arches: [aarch64]
@@ -82,4 +82,4 @@ modules:
       - type: script
         dest-filename: run.sh
         commands:
-          - zypak-wrapper.sh /app/main/NouTube "$@"
+          - zypak-wrapper.sh /app/main/noutube "$@"
