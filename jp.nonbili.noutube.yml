@@ -1,9 +1,9 @@
 app-id: jp.nonbili.noutube
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: "26.08"
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "25.08"
+base-version: "26.08"
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node22
 command: run.sh
@@ -37,13 +37,13 @@ modules:
       - install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.nonbili.noutube.png
     sources:
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.0/source.tar.gz
-        sha256: 2552897cc1512f509c559047dc85f7cb3962f8e33496c4a7057e549c08efc6be
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.1/source.tar.gz
+        sha256: 4b4a797d1344c04d6b606da61d1417df0dff05b436ab7dac4c701a097be19a8e
         strip-components: 0
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.0/node_modules-x64.tar.gz
-        sha256: b56be6804c0b8774051fc60839af4b7156e3cdea014e59c76ddc11082e1aa32a
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.1/node_modules-x64.tar.gz
+        sha256: 4dea9f30ec840e87b2211dca2fac9e459366b26b5c12b812a35ea65ba5bd934c
         dest: node_modules
         only-arches: [x86_64]
 
@@ -61,8 +61,8 @@ modules:
         only-arches: [x86_64]
 
       - type: archive
-        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.0/node_modules-arm64.tar.gz
-        sha256: 501c7d36eda700a2c98157935ed523f612184713a92ef6518713d4b8343e2faf
+        url: https://github.com/nonbili/NouTube-Desktop/releases/download/v0.3.1/node_modules-arm64.tar.gz
+        sha256: 3e5a5fb497108e272454699bebffec65d7be6d64dffd2a59218e112ffa63c849
         dest: node_modules
         only-arches: [aarch64]
 
